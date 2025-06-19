@@ -304,5 +304,25 @@
     "typ": "otwarte",
     "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
     "poprawna": ["<h1>", "<H1>", "h1", "H1"]
-  }                                   
+  },
+  {
+    "typ": "otwarte",
+    "pytanie": "Ile jest sieci na tym obrazku",
+    "poprawna": ["<h1>", "<H1>", "h1", "H1"]
+  },
+  {
+    "typ": "zamknięte",
+    "graf": {
+      "węzły": ["Sieć1", "Sieć2", "Sieć3", "Sieć4"],
+      "połączenia": [
+        ["Sieć1", "Sieć2"],
+        ["Sieć2", "Sieć3"],
+        ["Sieć2", "Sieć4"]
+      ],
+      "schemat": "Sieć1 ---- Sieć2\n               | \\\n               |  \\\n            Sieć3 Sieć4"
+    },
+    "pytanie": "Na podstawie grafu poniżej, ile sieci (węzłów) jest połączonych:",
+    "odpowiedzi": { "A": "3", "B": "4", "C": "2", "D": "5" },
+    "poprawna": "B"
+  }                              
 ]

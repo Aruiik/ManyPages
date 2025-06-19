@@ -14,31 +14,45 @@ function generateQuestions() {
     return;
   }
 
-shuffledQuestions = [...wszystkiePytania].sort(() => Math.random() - 0.5).slice(0, 30);
-const list = document.getElementById("questionList");
-list.innerHTML = "";
+  shuffledQuestions = [...wszystkiePytania].sort(() => Math.random() - 0.5).slice(0, 30);
+  const list = document.getElementById("questionList");
+  list.innerHTML = "";
 
-shuffledQuestions.forEach((item, index) => {
-  const li = document.createElement("li");
-  li.innerHTML = `<strong>${index + 1}. ${item.pytanie}</strong><br>`;
+  shuffledQuestions.forEach((item, index) => {
+    const li = document.createElement("li");
+    let html = `<strong>${index + 1}. ${item.pytanie}</strong><br>`;
 
-  if (item.typ === "zamknięte") {
-    for (const [key, text] of Object.entries(item.odpowiedzi)) {
-      const label = document.createElement("label");
-      label.innerHTML = `<input type="radio" name="q${index}" value="${key}"> ${key}: ${text}<br>`;
-      li.appendChild(label);
+    if (item.graf) {
+      if (item.graf.schemat) {
+        html += `<div class="graf-schemat"><pre>${item.graf.schemat}</pre></div>`;
+      }
+      html += `<div class="graf-wezly"><b>Sieci:</b> ${item.graf.węzły.join(", ")}</div>`;
+      html += `<div class="graf-polaczenia"><b>Połączenia:</b> ${item.graf.połączenia.map(p => p.join("–")).join(", ")}</div>`;
     }
-  } else if (item.typ === "otwarte") {
-    const input = document.createElement("input");
-    input.type = "text";
-    input.name = `q${index}`;
-    input.placeholder = "Twoja odpowiedź...";
-    li.appendChild(input);
-  }
 
-  list.appendChild(li);
-});
+    html += `<div class="graf-odpowiedzi"></div>`;
 
+    li.innerHTML = html;
+
+    if (item.typ === "zamknięte") {
+      for (const [key, text] of Object.entries(item.odpowiedzi)) {
+        const label = document.createElement("label");
+        label.innerHTML = `<input type="radio" name="q${index}" value="${key}"> ${key}: ${text}<br>`;
+        li.appendChild(label);
+      }
+    } else if (item.typ === "otwarte") {
+      const input = document.createElement("input");
+      input.type = "text";
+      input.name = `q${index}`;
+      input.placeholder = "Twoja odpowiedź...";
+      li.appendChild(input);
+    }
+
+    list.appendChild(li);
+  });
+
+  document.getElementById('checkAnswersBtn').disabled = false;
+  document.getElementById("wynik").textContent = "";
 };
 
 function checkAnswers() {
@@ -65,7 +79,6 @@ function checkAnswers() {
         userAnswer === ans.trim().toLowerCase().replace(/\s+/g, "")
       );
 
-
       if (isCorrect) {
         score++;
         item.style.backgroundColor = "#44c763";
@@ -75,6 +88,7 @@ function checkAnswers() {
     }
   });
 
+  document.getElementById('checkAnswersBtn').disabled = true;
   document.getElementById("wynik").textContent = `Twój wynik: ${score} / ${shuffledQuestions.length}`;
 }
 

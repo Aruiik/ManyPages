@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(65, 65, 65);
+    background-color: rgba(53,58,60,255);
 }
 
 #ulCofania {
@@ -20,16 +20,23 @@ body {
 
 .powrot {
     font-size: 40px;
-    background-color: wheat;
+    background-color: rgb(96,12,20);
     color: white;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.powrot:hover{
+    background-color: rgb(168,28,36);
+    transform: scale(1.07);    
 }
 
 #headerNauki {
     text-align: center;
+    color: white;
 }
 
 #generateQuestionsBtn {
-    background-color: rgb(114, 19, 27);
+    background-color: rgb(96,12,20);
     color: white;
     margin: 30px 0;
     align-items: center;
@@ -40,12 +47,12 @@ body {
 }
 
 #generateQuestionsBtn:hover {
-    background-color: rgb(202, 32, 46);
+    background-color: rgb(168,28,36);
     transform: scale(1.07);
 }
 
 #checkAnswersBtn {
-    background-color: rgb(114, 19, 27);
+    background-color: rgb(96,12,20);
     color: white;
     margin: 30px 0;
     align-items: center;
@@ -56,7 +63,7 @@ body {
 }
 
 #checkAnswersBtn:hover {
-    background-color: rgb(202, 32, 46);
+    background-color: rgb(168,28,36);
     transform: scale(1.07);
 }
 
@@ -65,8 +72,8 @@ body {
     position: relative;
     border: 3px solid rgb(114, 19, 27);
     border-radius: 26px;
-    width: 50%;
-    left: 25%;
+    width: 30%;
+    left: 35%;
 }
 
 #questionList {
@@ -104,4 +111,17 @@ body {
 
 #wynik {
     color: white;
+}
+
+.graf-schemat {
+    margin-bottom: 18px;
+}
+.graf-wezly {
+    margin-bottom: 12px;
+}
+.graf-polaczenia {
+    margin-bottom: 18px;
+}
+.graf-odpowiedzi {
+    margin-bottom: 10px;
 }
