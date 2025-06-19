@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(65, 65, 65);
+}
+
+#ulCofania {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#liCofania a {
+    text-decoration: none;
+    color: white;
+}
+
+#liCofania a:hover {
+    background-color: aquamarine;
+    color: white;
+}
+
+.powrot {
+    font-size: 40px;
+    background-color: wheat;
+    color: white;
+}
+
+#headerNauki {
+    text-align: center;
+}
+
+#generateQuestionsBtn {
+    background-color: rgb(114, 19, 27);
+    color: white;
+    margin: 30px 0;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 26px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#generateQuestionsBtn:hover {
+    background-color: rgb(202, 32, 46);
+    transform: scale(1.07);
+}
+
+#checkAnswersBtn {
+    background-color: rgb(114, 19, 27);
+    color: white;
+    margin: 30px 0;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 26px;
+    transition: background 0.3s, transform 0.2s;    
+}
+
+#checkAnswersBtn:hover {
+    background-color: rgb(202, 32, 46);
+    transform: scale(1.07);
+}
+
+#questionsDiv {
+    padding: 10px;
+    position: relative;
+    border: 3px solid rgb(114, 19, 27);
+    border-radius: 26px;
+    width: 50%;
+    left: 25%;
+}
+
+#questionList {
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+#questionList li {
+    margin-bottom: 24px;
+}
+
+#questionList li label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+#questionList li input[type="text"] {
+    display: block;
+    margin-top: 8px;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;   
+    position: static;
+    top: 50%;
+    left: 50%;
+}
+
+#wynik {
+    color: white;
+}

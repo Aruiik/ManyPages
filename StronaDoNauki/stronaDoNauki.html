@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <div id="doCofania">
+        <ul id="ulCofania">
+            <li id="liCofania">
+            <button class="powrot" onclick="window.location.href='../index.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            </li>
+        </ul>
+    </div>        
+
+    <h1 id="headerNauki">STRONA DO NAUKI</h1>
+
+    <div id="questionsDiv">
+        <div id="center">
+            <button id="generateQuestionsBtn" onclick="generateQuestions()">Wygeneruj 30 pytań</button>
+            <ul id="questionList"></ul> 
+
+            <button id="checkAnswersBtn" onclick="checkAnswers()">Sprawdź wynik</button>
+            <p id="wynik"></p>
+        </div>
+    </div>
+
+    <footer>Stopka</footer>
+    
+    
+
+    <script src="script.js"></script>    
+</body>
+</html>
