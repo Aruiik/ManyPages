@@ -72,8 +72,8 @@ body {
     position: relative;
     border: 3px solid rgb(114, 19, 27);
     border-radius: 26px;
-    width: 30%;
-    left: 35%;
+    width: 35%;
+    left: 32%;
 }
 
 #questionList {
@@ -116,12 +116,94 @@ body {
 .graf-schemat {
     margin-bottom: 18px;
 }
+
 .graf-wezly {
     margin-bottom: 12px;
 }
+
 .graf-polaczenia {
     margin-bottom: 18px;
 }
+
 .graf-odpowiedzi {
     margin-bottom: 10px;
+}
+
+.graf-schemat pre {
+    background: #23272b;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    display: inline-block;
+    margin-bottom: 18px;
+    margin-top: 8px;
+}
+
+.graf-blok {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+
+.graf-blok .row {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+.graf-blok .node {
+    background: #444;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 6px;
+    font-weight: bold;
+    min-width: 70px;
+    text-align: center;
+    box-shadow: 0 2px 8px #0003;
+    border: 2px solid #a41c24;
+}
+
+.graf-blok .line-h {
+    width: 50px;
+    height: 4px;
+    background: #a41c24;
+    margin: 0 6px;
+    border-radius: 2px;
+}
+
+.graf-blok .line-v {
+    width: 4px;
+    height: 32px;
+    background: #a41c24;
+    margin: 0 12px;
+    border-radius: 2px;
+    align-self: flex-start;
+}
+
+.graf-blok .empty {
+    width: 82px;
+    height: 1px;
+}
+
+.tabela-poprawna {
+    background-color: #44c763 !important;
+}
+
+.tabela-bledna {
+    background-color: #e63e4d !important;
+}
+
+.tabela-poprawna-wskaznik {
+    background-color: #44c76355 !important;
+    border: 2px solid #44c763 !important;
+}
+.poprawna-odpowiedz {
+    font-weight: bold;
+    margin-top: 6px;
 }

@@ -1,328 +1,2021 @@
 [
   {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
+    "grupa": "PytaniaJeden",
+    "pytania": [
+      {
+        "typ": "tabela",
+        "pytanie": "Sklasyfikuj adresy IP, uzupełniając tabelę znakami X w odpowiednich kolumnach (adresowanie klasowe)",
+        "tabela": {
+          "naglowki": ["ADRES", "HOSTA", "SIECI", "ROZGŁOSZENIA", "GRUPOWY (D)", "BŁĘDNY LUB INNY"],
+          "adresy": [
+            "12.2.1.3",
+            "173.16.256.25",
+            "192.4.8.255",
+            "192.168.2.256",
+            "224.0.0.2"
+          ],
+          "poprawne": [
+            [2],   
+            [5],     
+            [3],     
+            [5], 
+            [4]           
+          ]
+        }
+      },
+      {
+        "typ": "tabela",
+        "pytanie": "Sklasyfikuj adresy IP, uzupełniając tabelę znakami X w odpowiednich kolumnach (adresowanie klasowe)",
+        "tabela": {
+          "naglowki": ["ADRES", "HOSTA", "SIECI", "ROZGŁOSZENIA", "GRUPOWY (D)", "BŁĘDNY LUB INNY"],
+          "adresy": [
+            "10.0.0.1",
+            "172.16.0.0",
+            "255.255.255.255",
+            "239.1.1.1",
+            "300.1.1.1"
+          ],
+          "poprawne": [
+            [2], 
+            [2],    
+            [3],   
+            [4],  
+            [5]     
+          ]
+        }
+      },
+      {
+        "typ": "tabela",
+        "pytanie": "Sklasyfikuj adresy IP, uzupełniając tabelę znakami X w odpowiednich kolumnach (adresowanie klasowe)",
+        "tabela": {
+          "naglowki": ["ADRES", "HOSTA", "SIECI", "ROZGŁOSZENIA", "GRUPOWY (D)", "BŁĘDNY LUB INNY"],
+          "adresy": [
+            "192.168.1.1",
+            "127.0.0.1",
+            "224.0.0.10",
+            "172.16.255.255",
+            "256.0.0.1"
+          ],
+          "poprawne": [
+            [2],    
+            [5],    
+            [4],    
+            [3],    
+            [5]     
+          ]
+        }
+      },
+      {
+        "typ": "tabela",
+        "pytanie": "Sklasyfikuj adresy IP, uzupełniając tabelę znakami X w odpowiednich kolumnach (adresowanie klasowe)",
+        "tabela": {
+          "naglowki": ["ADRES", "HOSTA", "SIECI", "ROZGŁOSZENIA", "GRUPOWY (D)", "BŁĘDNY LUB INNY"],
+          "adresy": [
+            "172.31.255.254",
+            "0.0.0.0",
+            "225.1.2.3",
+            "192.168.0.255",
+            "1.1.1.1"
+          ],
+          "poprawne": [
+            [2],    
+            [5],    
+            [4],    
+            [3],    
+            [2]     
+          ]
+        }
+      },
+      {
+        "typ": "tabela",
+        "pytanie": "Sklasyfikuj adresy IP, uzupełniając tabelę znakami X w odpowiednich kolumnach (adresowanie klasowe)",
+        "tabela": {
+          "naglowki": ["ADRES", "HOSTA", "SIECI", "ROZGŁOSZENIA", "GRUPOWY (D)", "BŁĘDNY LUB INNY"],
+          "adresy": [
+            "192.0.2.1",
+            "255.255.255.0",
+            "128.0.0.1",
+            "230.0.0.1",
+            "10.255.255.255"
+          ],
+          "poprawne": [
+            [2],    
+            [3],    
+            [2],    
+            [4],    
+            [3]     
+          ]
+        }
+      },
+      {
+        "typ": "tabela",
+        "pytanie": "Sklasyfikuj adresy IP, uzupełniając tabelę znakami X w odpowiednich kolumnach (adresowanie klasowe)",
+        "tabela": {
+          "naglowki": ["ADRES", "HOSTA", "SIECI", "ROZGŁOSZENIA", "GRUPOWY (D)", "BŁĘDNY LUB INNY"],
+          "adresy": [
+            "172.20.10.5",
+            "255.0.0.0",
+            "224.0.0.1",
+            "192.168.1.255",
+            "8.8.8.8"
+          ],
+          "poprawne": [
+            [1],    
+            [3],    
+            [4],    
+            [3],    
+            [2]     
+          ]
+        }
+      }
+   ]
   },
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
+    "grupa": "PytaniaDwa",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "graf": {
+          "węzły": ["A", "B", "C", "D", "E", "F", "Switch"],
+          "połączenia": [
+            ["A", "B"],
+            ["B", "C"],
+            ["C", "D"],
+            ["D", "Switch"],
+            ["Switch", "E"],
+            ["Switch", "F"]
+          ]
+        },
+        "schematHtml": "<svg width='520' height='220' style='margin:16px 0;display:block'><rect x='20' y='90' width='40' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='40' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>A</text><rect x='90' y='90' width='40' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='110' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>B</text><rect x='160' y='90' width='40' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='180' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>C</text><rect x='230' y='90' width='40' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='250' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>D</text><rect x='300' y='80' width='70' height='40' rx='8' fill='#222' stroke='#1ca4a4' stroke-width='3'/><text x='335' y='105' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Switch</text><rect x='410' y='30' width='40' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='430' y='50' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>E</text><rect x='410' y='150' width='40' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='430' y='170' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>F</text><line x1='60' y1='105' x2='90' y2='105' stroke='#a41c24' stroke-width='4'/><line x1='130' y1='105' x2='160' y2='105' stroke='#a41c24' stroke-width='4'/><line x1='200' y1='105' x2='230' y2='105' stroke='#a41c24' stroke-width='4'/><line x1='270' y1='105' x2='300' y2='100' stroke='#a41c24' stroke-width='4'/><line x1='370' y1='100' x2='410' y2='45' stroke='#a41c24' stroke-width='4'/><line x1='370' y1='120' x2='410' y2='165' stroke='#a41c24' stroke-width='4'/></svg>",
+        "pytanie": "Ile urządzeń jest połączonych przez Switch?",
+        "odpowiedzi": { "A": "7", "B": "6", "C": "3", "D": "4" },
+        "poprawna": "D"
+      },
+      {
+        "typ": "zamknięte",
+        "graf": {
+          "węzły": ["Sieć1", "Sieć2", "Sieć3", "Sieć4"],
+          "połączenia": [
+            ["Sieć1", "Sieć2"],
+            ["Sieć1", "Sieć3"],
+            ["Sieć2", "Sieć4"]
+          ]
+        },
+        "schematHtml": "<svg width='440' height='180' style='margin:16px 0;display:block'><rect x='190' y='20' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='220' y='40' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć1</text><rect x='90' y='90' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='120' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć3</text><rect x='290' y='90' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='320' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć2</text><rect x='350' y='140' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='380' y='160' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć4</text><line x1='220' y1='50' x2='120' y2='90' stroke='#a41c24' stroke-width='4'/><line x1='220' y1='50' x2='320' y2='90' stroke='#a41c24' stroke-width='4'/><line x1='320' y1='120' x2='380' y2='140' stroke='#a41c24' stroke-width='4'/></svg>",
+        "pytanie": "Ile sieci jest połączonych w tym grafie?",
+        "odpowiedzi": { "A": "2", "B": "3", "C": "4", "D": "5" },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "graf": {
+          "węzły": ["SiećA", "SiećB", "SiećC", "SiećD"],
+          "połączenia": [
+            ["SiećA", "SiećB"],
+            ["SiećA", "SiećC"],
+            ["SiećC", "SiećD"]
+          ]
+        },
+        "schematHtml": "<svg width='440' height='180' style='margin:16px 0;display:block'><rect x='190' y='20' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='220' y='40' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećA</text><rect x='60' y='90' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='90' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećB</text><rect x='320' y='90' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='350' y='110' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećC</text><rect x='320' y='140' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='350' y='160' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećD</text><line x1='220' y1='50' x2='90' y2='90' stroke='#a41c24' stroke-width='4'/><line x1='220' y1='50' x2='350' y2='90' stroke='#a41c24' stroke-width='4'/><line x1='350' y1='120' x2='350' y2='140' stroke='#a41c24' stroke-width='4'/></svg>",
+        "pytanie": "Ile sieci jest połączonych w tym grafie?",
+        "odpowiedzi": { "A": "2", "B": "3", "C": "4", "D": "5" },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "graf": {
+          "węzły": ["SiećX", "SiećY", "SiećZ"],
+          "połączenia": [
+            ["SiećX", "SiećY"],
+            ["SiećX", "SiećZ"]
+          ]
+        },
+        "schematHtml": "<svg width='220' height='100' style='margin:16px 0;display:block'><rect x='80' y='10' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='110' y='30' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećX</text><rect x='10' y='70' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='40' y='90' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećY</text><rect x='150' y='70' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='180' y='90' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećZ</text><line x1='110' y1='40' x2='40' y2='70' stroke='#a41c24' stroke-width='4'/><line x1='110' y1='40' x2='180' y2='70' stroke='#a41c24' stroke-width='4'/></svg>",
+        "pytanie": "Ile sieci jest połączonych na tym grafie?",
+        "odpowiedzi": { "A": "2", "B": "3", "C": "4", "D": "5" },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "graf": {
+          "węzły": ["Sieć1", "Sieć2", "Sieć3", "Sieć4", "Sieć5"],
+          "połączenia": [
+            ["Sieć1", "Sieć2"],
+            ["Sieć1", "Sieć3"],
+            ["Sieć3", "Sieć4"],
+            ["Sieć3", "Sieć5"]
+          ]
+        },
+        "schematHtml": "<svg width='540' height='220' style='margin:16px 0;display:block'><rect x='240' y='20' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='270' y='40' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć1</text><rect x='100' y='100' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='130' y='120' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć2</text><rect x='380' y='100' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='410' y='120' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć3</text><rect x='320' y='170' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='350' y='190' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć4</text><rect x='440' y='170' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='470' y='190' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>Sieć5</text><line x1='270' y1='50' x2='130' y2='100' stroke='#a41c24' stroke-width='4'/><line x1='270' y1='50' x2='410' y2='100' stroke='#a41c24' stroke-width='4'/><line x1='410' y1='130' x2='350' y2='170' stroke='#a41c24' stroke-width='4'/><line x1='410' y1='130' x2='470' y2='170' stroke='#a41c24' stroke-width='4'/></svg>",
+        "pytanie": "Ile sieci jest połączonych w tym grafie?",
+        "odpowiedzi": { "A": "3", "B": "4", "C": "5", "D": "2" },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "graf": {
+          "węzły": ["SiećA", "SiećB", "SiećC", "SiećD"],
+          "połączenia": [
+            ["SiećA", "SiećB"],
+            ["SiećA", "SiećC"],
+            ["SiećA", "SiećD"]
+          ]
+        },
+        "schematHtml": "<svg width='320' height='120' style='margin:16px 0;display:block'><rect x='130' y='10' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='160' y='30' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećA</text><rect x='10' y='70' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='40' y='90' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećB</text><rect x='130' y='70' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='160' y='90' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećC</text><rect x='250' y='70' width='60' height='30' rx='8' fill='#444' stroke='#a41c24' stroke-width='2'/><text x='280' y='90' fill='#fff' font-size='16' text-anchor='middle' alignment-baseline='middle'>SiećD</text><line x1='160' y1='40' x2='40' y2='70' stroke='#a41c24' stroke-width='4'/><line x1='160' y1='40' x2='160' y2='70' stroke='#a41c24' stroke-width='4'/><line x1='160' y1='40' x2='280' y2='70' stroke='#a41c24' stroke-width='4'/></svg>",
+        "pytanie": "Ile sieci jest połączonych w tym grafie?",
+        "odpowiedzi": { "A": "2", "B": "3", "C": "4", "D": "5" },
+        "poprawna": "B"
+      }
+    ]
   },
-    {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
+    "grupa": "PytaniaTrzy",
+    "pytania": [
+      {
+          "typ": "otwarte-wiele",
+          "pytanie": "Podaj nazwy (znaczenie) skrótów flag (control bits) w nagłówku segmentu TCP (nazwy polskie lub angielskie):",
+          "podpytania": [
+            { "litera": "a", "skrot": "SYN", "poprawna": ["synchronize", "synchronizacja", "synchronizuj", "synchronization"] },
+            { "litera": "b", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "acknowledge"] },
+            { "litera": "c", "skrot": "URG", "poprawna": ["urgent", "pilny", "priorytetowy"] },
+            { "litera": "d", "skrot": "PSH", "poprawna": ["push", "wypchnij", "przepchnij"] }
+          ]
+        },
+        {
+          "typ": "otwarte-wiele",
+          "pytanie": "Podaj rozwinięcia poniższych skrótów flag w TCP:",
+          "podpytania": [
+            { "litera": "a", "skrot": "RST", "poprawna": ["reset", "resetowanie", "restart"] },
+            { "litera": "b", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo"] },
+            { "litera": "c", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "acknowledge"] },
+            { "litera": "d", "skrot": "URG", "poprawna": ["urgent", "pilny", "priorytetowy"] }
+          ]
+        },
+        {
+          "typ": "otwarte-wiele",
+          "pytanie": "Rozszyfruj znaczenie flag w nagłówku TCP:",
+          "podpytania": [
+            { "litera": "a", "skrot": "FIN", "poprawna": ["finish", "zakończenie", "final", "koniec transmisji"] },
+            { "litera": "b", "skrot": "CWR", "poprawna": ["congestion window reduced", "zmniejszenie okna przeciążenia"] },
+            { "litera": "c", "skrot": "PSH", "poprawna": ["push", "wypchnij", "natychmiastowe dostarczenie"] },
+            { "litera": "d", "skrot": "SYN", "poprawna": ["synchronize", "synchronizacja", "synchronizuj", "synchronization"] }
+          ]
+        },
+        {
+          "typ": "otwarte-wiele",
+          "pytanie": "Podaj nazwy (znaczenie) skrótów flag (control bits) w nagłówku segmentu TCP (nazwy polskie lub angielskie):",
+          "podpytania": [
+            { "litera": "a", "skrot": "FIN", "poprawna": ["finish", "zakończenie", "koniec", "final"] },
+            { "litera": "b", "skrot": "RST", "poprawna": ["reset", "restart", "zerowanie", "ponowne połączenie"] },
+            { "litera": "c", "skrot": "CWR", "poprawna": ["congestion window reduced", "zmniejszenie okna przeciążenia"] },
+            { "litera": "d", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo"] }
+          ]
+        },
+        {
+          "typ": "otwarte-wiele",
+          "pytanie": "Wyjaśnij znaczenie flag TCP podanych niżej (można podać po polsku lub angielsku):",
+          "podpytania": [
+            { "litera": "a", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack"] },
+            { "litera": "b", "skrot": "FIN", "poprawna": ["finish", "zakończenie", "koniec", "final"] },
+            { "litera": "c", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo"] },
+            { "litera": "d", "skrot": "RST", "poprawna": ["reset", "restart", "ponowne połączenie"] }
+          ]
+        },
+        {
+          "typ": "otwarte-wiele",
+          "pytanie": "Dopasuj rozwinięcia do flag TCP:",
+          "podpytania": [
+            { "litera": "a", "skrot": "URG", "poprawna": ["urgent", "priorytetowy", "pilny"] },
+            { "litera": "b", "skrot": "PSH", "poprawna": ["push", "wypchnij", "natychmiastowe dostarczenie"] },
+            { "litera": "c", "skrot": "CWR", "poprawna": ["congestion window reduced", "zmniejszenie okna przeciążenia"] },
+            { "litera": "d", "skrot": "SYN", "poprawna": ["synchronize", "synchronizacja"] }
+          ]
+        }
+    ]
+  },  
+
+
+
+  {
+    "grupa": "PytaniaCztery",
+    "pytania": [
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Określ rozwinięcia następujących typów rekordów RR w usłudze DNS:",
+        "podpytania": [
+          { "litera": "a", "skrot": "A", "poprawna": ["address", "adres IPv4", "IPv4", "ipv4", "IPV4"] },
+          { "litera": "b", "skrot": "NS", "poprawna": ["name server", "serwer nazw"] },
+          { "litera": "c", "skrot": "MX", "poprawna": ["mail exchange", "serwer pocztowy"] },
+          { "litera": "d", "skrot": "AAAA", "poprawna": ["quad A", "adres IPv6", "IPv6", "ipv6", "IPV6"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Podaj znaczenia poniższych rekordów DNS:",
+        "podpytania": [
+          { "litera": "a", "skrot": "CNAME", "poprawna": ["canonical name", "kanoniczna nazwa"] },
+          { "litera": "b", "skrot": "TXT", "poprawna": ["text", "tekstowy rekord"] },
+          { "litera": "c", "skrot": "PTR", "poprawna": ["pointer", "wskazujący"] },
+          { "litera": "d", "skrot": "SOA", "poprawna": ["start of authority", "początek autorytetu"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Dopasuj pełne nazwy do typów rekordów DNS:",
+        "podpytania": [
+          { "litera": "a", "skrot": "MX", "poprawna": ["mail exchange", "serwer pocztowy"] },
+          { "litera": "b", "skrot": "CNAME", "poprawna": ["canonical name", "kanoniczna nazwa"] },
+          { "litera": "c", "skrot": "A", "poprawna": ["address", "adres IPv4", "IPv4", "ipv4", "IPV4"] },
+          { "litera": "d", "skrot": "PTR", "poprawna": ["pointer", "wskazujący"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Podaj, co oznaczają poniższe skróty typów rekordów DNS:",
+        "podpytania": [
+          { "litera": "a", "skrot": "SOA", "poprawna": ["start of authority", "początek autorytetu"] },
+          { "litera": "b", "skrot": "AAAA", "poprawna": ["quad A", "adres IPv6", "IPv6", "ipv6", "IPV6"] },
+          { "litera": "c", "skrot": "TXT", "poprawna": ["text", "tekstowy rekord"] },
+          { "litera": "d", "skrot": "NS", "poprawna": ["name server", "serwer nazw"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Wypisz nazwy polskie lub angielskie dla rekordów DNS poniżej:",
+        "podpytania": [
+          { "litera": "a", "skrot": "PTR", "poprawna": ["pointer", "wskazujący"] },
+          { "litera": "b", "skrot": "A", "poprawna": ["address", "adres IPv4", "IPv4", "ipv4", "IPV4"] },
+          { "litera": "c", "skrot": "MX", "poprawna": ["mail exchange", "serwer pocztowy"] },
+          { "litera": "d", "skrot": "TXT", "poprawna": ["text", "tekstowy rekord"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Dopasuj rozwinięcia skrótów rekordów RR w DNS:",
+        "podpytania": [
+          { "litera": "a", "skrot": "NS", "poprawna": ["name server", "serwer nazw"] },
+          { "litera": "b", "skrot": "CNAME", "poprawna": ["canonical name", "kanoniczna nazwa"] },
+          { "litera": "c", "skrot": "SOA", "poprawna": ["start of authority", "początek autorytetu"] },
+          { "litera": "d", "skrot": "AAAA", "poprawna": ["quad A", "adres IPv6", "IPv6", "ipv6", "IPV6"] }
+        ]
+      }
+    ]
+  },  
+
+
+
+  {
+    "grupa": "PytaniaPięć",
+    "pytania": [
+      {
+        "typ": "otwarte",
+        "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
+        "poprawna": ["<h1>", "<H1>", "h1", "H1"]
+      },
+      {
+        "typ": "otwarte",
+        "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
+        "poprawna": ["<h1>", "<H1>", "h1", "H1"]
+      },
+      {
+        "typ": "otwarte",
+        "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
+        "poprawna": ["<h1>", "<H1>", "h1", "H1"]
+      },
+      {
+        "typ": "otwarte",
+        "pytanie": "Ile jest sieci na tym obrazku",
+        "poprawna": ["<h1>", "<H1>", "h1", "H1"]
+      }
+    ]
+  },  
+
+
+
+  {
+    "grupa": "PytaniaSześć",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która warstwa jest czwartą w czterowarstwowym modelu TCP/IP?",
+        "odpowiedzi": {
+          "A": "Warstwa sesji",
+          "B": "Warstwa aplikacji",
+          "C": "Warstwa sieci",
+          "D": "Warstwa transportowa"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która warstwa jest najwyższą (czwartą) warstwą w modelu TCP/IP?",
+        "odpowiedzi": {
+          "A": "Warstwa aplikacji",
+          "B": "Warstwa transportowa",
+          "C": "Warstwa sieci",
+          "D": "Warstwa dostępu do sieci"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która warstwa w modelu TCP/IP odpowiada za niezawodne przesyłanie danych między procesami (trzecia warstwa)?",
+        "odpowiedzi": {
+          "A": "Warstwa sieci",
+          "B": "Warstwa transportowa",
+          "C": "Warstwa aplikacji",
+          "D": "Warstwa dostępu do sieci"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która warstwa modelu TCP/IP odpowiada za routing i adresowanie IP (druga warstwa)?",
+        "odpowiedzi": {
+          "A": "Warstwa aplikacji",
+          "B": "Warstwa transportowa",
+          "C": "Warstwa sieci",
+          "D": "Warstwa fizyczna"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która warstwa modelu TCP/IP odpowiada za fizyczny dostęp do medium transmisyjnego (pierwsza warstwa)?",
+        "odpowiedzi": {
+          "A": "Warstwa dostępu do sieci",
+          "B": "Warstwa transportowa",
+          "C": "Warstwa aplikacji",
+          "D": "Warstwa sesji"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W której warstwie modelu TCP/IP działają protokoły TCP i UDP (trzecia warstwa)?",
+        "odpowiedzi": {
+          "A": "Warstwa aplikacji",
+          "B": "Warstwa sieci",
+          "C": "Warstwa transportowa",
+          "D": "Warstwa fizyczna"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która warstwa modelu TCP/IP zapewnia usługi takie jak HTTP, FTP i DNS (czwartwa warstwa) ?",
+        "odpowiedzi": {
+          "A": "Warstwa sieci",
+          "B": "Warstwa aplikacji",
+          "C": "Warstwa dostępu do sieci",
+          "D": "Warstwa transportowa"
+        },
+        "poprawna": "B"
+      }
+    ]
+  },  
+
+
+
+  {
+    "grupa": "PytaniaSiedem",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Skrót CSMA/CA oznacza metodę wielodostępu do kanału komunikacyjnego:",
+        "odpowiedzi": {
+          "A": "z wykrywaniem kolizji",
+          "B": "z całkowitą eliminacją kolizji",
+          "C": "z unikaniem kolizji",
+          "D": "z równomiernym podziałem czasu"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W metodzie CSMA/CD urządzenie:",
+        "odpowiedzi": {
+          "A": "unika kolizji przed nadawaniem",
+          "B": "ignoruje kolizje",
+          "C": "wykrywa kolizje podczas transmisji",
+          "D": "działa w trybie pełnego dupleksu"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Na czym polega metoda dostępu TDMA?",
+        "odpowiedzi": {
+          "A": "Na dynamicznym wykrywaniu kolizji",
+          "B": "Na podziale kanału na różne częstotliwości",
+          "C": "Na rezerwacji pasma przed transmisją",
+          "D": "Na podziale czasu transmisji na szczeliny czasowe"
+        },
+        "poprawna": "D"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "FDMA to metoda dostępu do medium polegająca na:",
+        "odpowiedzi": {
+          "A": "wspólnym nadawaniu w tej samej chwili",
+          "B": "rezerwacji czasu transmisji dla każdego urządzenia",
+          "C": "rozdzieleniu transmisji na różne pasma częstotliwości",
+          "D": "unikaniu kolizji przez opóźnienia"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która cecha najlepiej opisuje klasyczną metodę ALOHA?",
+        "odpowiedzi": {
+          "A": "Urządzenia dzielą kanał na przedziały czasowe",
+          "B": "Urządzenia czekają na brak kolizji przed wysłaniem",
+          "C": "Urządzenia wysyłają dane bez sprawdzania kanału",
+          "D": "Każde urządzenie ma przydzieloną częstotliwość"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Na czym polega metoda dostępu typu Polling?",
+        "odpowiedzi": {
+          "A": "Każde urządzenie wysyła dane kiedy chce",
+          "B": "Urządzenia są cyklicznie odpytywane przez kontroler",
+          "C": "Dane są przesyłane przez wiele kanałów jednocześnie",
+          "D": "Nadawanie odbywa się tylko po wykryciu kolizji"
+        },
+        "poprawna": "B"
+      }
+    ]
   },     
+  
+  
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
+    "grupa": "PytaniaOsiem",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Maksymalny rozmiar ramki Ethernet (IEEE 802.3) bez preambuły i bez CRC wynosi:",
+        "odpowiedzi": {
+          "A": "1472 oktetów",
+          "B": "1500 oktetów",
+          "C": "1518 oktetów",
+          "D": "żadna z powyższych odpowiedzi nie jest prawidłowa"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaki jest standardowy maksymalny rozmiar danych (MTU) w ramce Ethernet?",
+        "odpowiedzi": {
+          "A": "1500 bajtów",
+          "B": "1518 bajtów",
+          "C": "1472 bajty",
+          "D": "65535 bajtów"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Maksymalny całkowity rozmiar standardowej ramki Ethernet (z nagłówkiem i CRC, bez preambuły) to:",
+        "odpowiedzi": {
+          "A": "1500 oktetów",
+          "B": "1514 oktetów",
+          "C": "1518 oktetów",
+          "D": "1522 oktety"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaką maksymalną długość może mieć tzw. ramka typu Jumbo Frame w Ethernet?",
+        "odpowiedzi": {
+          "A": "1500 bajtów",
+          "B": "9216 bajtów",
+          "C": "2048 bajtów",
+          "D": "4096 bajtów"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Minimalny rozmiar ramki Ethernet według standardu 802.3 (z nagłówkiem i CRC) to:",
+        "odpowiedzi": {
+          "A": "46 bajtów",
+          "B": "64 bajty",
+          "C": "72 bajty",
+          "D": "56 bajtów"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaki jest maksymalny rozmiar pola danych w standardowej ramce Ethernet (bez preambuły, nagłówka i CRC)?",
+        "odpowiedzi": {
+          "A": "1518 bajtów",
+          "B": "46 bajtów",
+          "C": "1500 bajtów",
+          "D": "1452 bajty"
+        },
+        "poprawna": "C"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
+    "grupa": "PytaniaDziewięć",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Adres 172.168.31.6 to:",
+        "odpowiedzi": {
+          "A": "prywatny adres sieci, klasy C",
+          "B": "prywatny adres interfejsu, klasy C",
+          "C": "prywatny adres interfejsu, klasy B",
+          "D": "publiczny adres interfejsu, klasy B"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Adres 192.168.0.100 to:",
+        "odpowiedzi": {
+          "A": "publiczny adres klasy C",
+          "B": "prywatny adres klasy A",
+          "C": "prywatny adres klasy C",
+          "D": "adres multicastowy"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaki to typ adresu: 10.0.0.5?",
+        "odpowiedzi": {
+          "A": "adres prywatny klasy A",
+          "B": "adres prywatny klasy B",
+          "C": "adres publiczny klasy A",
+          "D": "adres rozgłoszeniowy"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Adres 8.8.8.8 to przykład:",
+        "odpowiedzi": {
+          "A": "adresu multicastowego",
+          "B": "adresu prywatnego klasy A",
+          "C": "adresu publicznego klasy A",
+          "D": "adresu lokalnego klasy B"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Adres 224.0.0.1 to:",
+        "odpowiedzi": {
+          "A": "adres prywatny klasy C",
+          "B": "adres publiczny klasy A",
+          "C": "adres rozgłoszeniowy",
+          "D": "adres multicastowy (klasa D)"
+        },
+        "poprawna": "D"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Do jakiej klasy należy adres IPv4: 150.10.0.1?",
+        "odpowiedzi": {
+          "A": "klasa A",
+          "B": "klasa B",
+          "C": "klasa C",
+          "D": "klasa D"
+        },
+        "poprawna": "B"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
+    "grupa": "PytaniaDziesięć",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Maska 255.255.255.248 jest maską, która zapisuje się w tzw. notacji skróconej (ukośnikowej) jako:",
+        "odpowiedzi": {
+          "A": "../27",
+          "B": "../28",
+          "C": "../29",
+          "D": "../30"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Maska 255.255.255.0 odpowiada notacji skróconej:",
+        "odpowiedzi": {
+          "A": "../16",
+          "B": "../24",
+          "C": "../20",
+          "D": "../22"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Maska 255.255.0.0 w notacji ukośnikowej (CIDR) to:",
+        "odpowiedzi": {
+          "A": "../8",
+          "B": "../24",
+          "C": "../16",
+          "D": "../20"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaki zapis CIDR odpowiada masce 255.255.255.192?",
+        "odpowiedzi": {
+          "A": "../25",
+          "B": "../26",
+          "C": "../27",
+          "D": "../28"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Maska 255.255.255.240 odpowiada notacji skróconej:",
+        "odpowiedzi": {
+          "A": "../29",
+          "B": "../28",
+          "C": "../30",
+          "D": "../31"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaka notacja CIDR odpowiada masce 255.0.0.0?",
+        "odpowiedzi": {
+          "A": "../16",
+          "B": "../24",
+          "C": "../8",
+          "D": "../10"
+        },
+        "poprawna": "C"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
+    "grupa": "PytaniaJedenaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "W adresach IPv6 bloki zer można zastąpić znakami:",
+        "odpowiedzi": {
+          "A": "0:0",
+          "B": "::",
+          "C": "FFFF",
+          "D": "80:"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która z poniższych zasad dotyczy skracania adresów IPv6?",
+        "odpowiedzi": {
+          "A": "każdą grupę można skrócić do jednego znaku",
+          "B": "wszystkie zera zamienia się na '0x'",
+          "C": "ciąg kolejnych bloków zer zastępuje się '::'",
+          "D": "adres IPv6 nie może być skracany"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jak należy skrócić adres IPv6: `2001:0db8:0000:0000:0000:0000:0000:0001`?",
+        "odpowiedzi": {
+          "A": "2001::1",
+          "B": "2001:0db8::0001",
+          "C": "2001:db8::1",
+          "D": "wszystkie odpowiedzi są poprawne"
+        },
+        "poprawna": "D"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W skróconym zapisie IPv6, ile razy w adresie może wystąpić symbol '::'?",
+        "odpowiedzi": {
+          "A": "Nie ma ograniczeń",
+          "B": "Maksymalnie raz",
+          "C": "Dokładnie dwa razy",
+          "D": "Tyle razy, ile jest zer"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jak poprawnie skrócić grupę '0042' w adresie IPv6?",
+        "odpowiedzi": {
+          "A": "42",
+          "B": "0042",
+          "C": "0x42",
+          "D": "0:42"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Który z poniższych zapisów adresu IPv6 jest **niepoprawny**?",
+        "odpowiedzi": {
+          "A": "2001:db8::1",
+          "B": "::ffff:c0a8:1",
+          "C": "2001::85a3::7334",
+          "D": "::1"
+        },
+        "poprawna": "C"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
+    "grupa": "PytaniaDwamaście",
+    "pytania": [
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które pola występują (tak), a które nie występują (nie) w nagłówku datagramu IP:",
+        "podpytania": [
+          { "skrot": "długość nagłówka (IHL)", "poprawna": "tak" },
+          { "skrot": "adres IP odbiorcy", "poprawna": "tak" },
+          { "skrot": "numer protokołu", "poprawna": "tak" },
+          { "skrot": "numer potwierdzenia", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Które z poniższych pól znajdują się w nagłówku IPv4?",
+        "podpytania": [
+          { "skrot": "identyfikator fragmentu", "poprawna": "tak" },
+          { "skrot": "czas życia (TTL)", "poprawna": "tak" },
+          { "skrot": "numer portu źródłowego", "poprawna": "nie" },
+          { "skrot": "suma kontrolna UDP", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz pola obecne w nagłówku IPv4:",
+        "podpytania": [
+          { "skrot": "wersja protokołu", "poprawna": "tak" },
+          { "skrot": "suma kontrolna nagłówka", "poprawna": "tak" },
+          { "skrot": "numer sekwencji TCP", "poprawna": "nie" },
+          { "skrot": "numer potoku (pipeline)", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Określ, które pola są częścią nagłówka datagramu IP (IPv4):",
+        "podpytania": [
+          { "skrot": "typ usługi (DSCP)", "poprawna": "tak" },
+          { "skrot": "całkowita długość datagramu", "poprawna": "tak" },
+          { "skrot": "adres MAC źródła", "poprawna": "nie" },
+          { "skrot": "flaga SYN", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Wskaż, które pola należą do nagłówka IPv4:",
+        "podpytania": [
+          { "skrot": "pole fragmentacji", "poprawna": "tak" },
+          { "skrot": "numer sesji", "poprawna": "nie" },
+          { "skrot": "adres IP nadawcy", "poprawna": "tak" },
+          { "skrot": "czas propagacji", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które z wymienionych pól występują w nagłówku IPv4:",
+        "podpytania": [
+          { "skrot": "nagłówek opcji (opcjonalny)", "poprawna": "tak" },
+          { "skrot": "nagłówek TLS", "poprawna": "nie" },
+          { "skrot": "adres IP docelowy", "poprawna": "tak" },
+          { "skrot": "numer portu docelowego", "poprawna": "nie" }
+        ]
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
+    "grupa": "PytaniaTrzynaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "MTU wynosi 1020 oktetów. Długość nagłówka datagramu IP wynosi 5 słów. Całkowita długość datagramu wynosi 2940 oktetów. W wyniku fragmentacji datagram zostanie podzielony na:",
+        "odpowiedzi": {
+          "A": "2 fragmenty",
+          "B": "3 fragmenty",
+          "C": "4 fragmenty",
+          "D": "5 fragmentów"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "MTU wynosi 1500 oktetów. Długość nagłówka datagramu IP wynosi 6 słów. Całkowita długość datagramu wynosi 4500 oktetów. W wyniku fragmentacji datagram zostanie podzielony na:",
+        "odpowiedzi": {
+          "A": "2 fragmenty",
+          "B": "3 fragmenty",
+          "C": "4 fragmenty",
+          "D": "5 fragmentów"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "MTU wynosi 576 oktetów. Długość nagłówka datagramu IP wynosi 5 słów. Całkowita długość datagramu wynosi 1600 oktetów. W wyniku fragmentacji datagram zostanie podzielony na:",
+        "odpowiedzi": {
+          "A": "2 fragmenty",
+          "B": "3 fragmenty",
+          "C": "4 fragmenty",
+          "D": "5 fragmentów"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "MTU wynosi 1280 oktetów. Długość nagłówka datagramu IP wynosi 4 słowa. Całkowita długość datagramu wynosi 3600 oktetów. W wyniku fragmentacji datagram zostanie podzielony na:",
+        "odpowiedzi": {
+          "A": "2 fragmenty",
+          "B": "3 fragmenty",
+          "C": "4 fragmenty",
+          "D": "5 fragmentów"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "MTU wynosi 800 oktetów. Długość nagłówka datagramu IP wynosi 5 słów. Całkowita długość datagramu wynosi 2600 oktetów. W wyniku fragmentacji datagram zostanie podzielony na:",
+        "odpowiedzi": {
+          "A": "3 fragmenty",
+          "B": "4 fragmenty",
+          "C": "5 fragmentów",
+          "D": "6 fragmentów"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "MTU wynosi 1400 oktetów. Długość nagłówka datagramu IP wynosi 7 słów. Całkowita długość datagramu wynosi 5000 oktetów. W wyniku fragmentacji datagram zostanie podzielony na:",
+        "odpowiedzi": {
+          "A": "3 fragmenty",
+          "B": "4 fragmenty",
+          "C": "5 fragmentów",
+          "D": "6 fragmentów"
+        },
+        "poprawna": "C"
+      }
+    ]
+  },         
+  
+  
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
+    "grupa": "PytaniaCzternaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Komunikaty: \"prośba o echo\" i \"odpowiedź z echem\" (polecenie ping) są komunikatami protokołu:",
+        "odpowiedzi": {
+          "A": "IP",
+          "B": "ICMP",
+          "C": "STP",
+          "D": "TCP"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Który protokół odpowiada za komunikaty \"echo request\" i \"echo reply\", używane przez polecenie ping?",
+        "odpowiedzi": {
+          "A": "UDP",
+          "B": "ICMP",
+          "C": "ARP",
+          "D": "HTTP"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Prośba o echo oraz odpowiedź z echem to komunikaty charakterystyczne dla protokołu:",
+        "odpowiedzi": {
+          "A": "IP",
+          "B": "ICMP",
+          "C": "FTP",
+          "D": "TCP"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Komunikaty typu \"echo request\" i \"echo reply\", używane w diagnostyce sieci, należą do protokołu:",
+        "odpowiedzi": {
+          "A": "ICMP",
+          "B": "IGMP",
+          "C": "ARP",
+          "D": "SNMP"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Polecenie ping wykorzystuje komunikaty \"echo request\" i \"echo reply\" protokołu:",
+        "odpowiedzi": {
+          "A": "TCP",
+          "B": "ICMP",
+          "C": "UDP",
+          "D": "IP"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Do którego protokołu należą komunikaty wykorzystywane w poleceniu ping, takie jak \"prośba o echo\" i \"odpowiedź z echem\"?",
+        "odpowiedzi": {
+          "A": "IP",
+          "B": "ICMP",
+          "C": "DHCP",
+          "D": "FTP"
+        },
+        "poprawna": "B"
+      }
+    ]
+  },  
+  
+  
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
+    "grupa": "PytaniaPiętnaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "W zasadzie bezpieczeństwa CIA litera I oznacza:",
+        "odpowiedzi": {
+          "A": "integralność",
+          "B": "identyfikowalność",
+          "C": "ciągłość",
+          "D": "poufność"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W modelu bezpieczeństwa CIA litera C oznacza:",
+        "odpowiedzi": {
+          "A": "ciągłość działania",
+          "B": "poufność",
+          "C": "integralność",
+          "D": "autoryzację"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Co oznacza litera A w zasadzie bezpieczeństwa CIA?",
+        "odpowiedzi": {
+          "A": "autoryzacja",
+          "B": "dostępność",
+          "C": "audyt",
+          "D": "integralność"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W zasadzie bezpieczeństwa CIA litera A oznacza:",
+        "odpowiedzi": {
+          "A": "availability (dostępność)",
+          "B": "authentication (uwierzytelnianie)",
+          "C": "accountability (odpowiedzialność)",
+          "D": "audit (audyt)"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W modelu CIA z zakresu bezpieczeństwa IT litera I oznacza:",
+        "odpowiedzi": {
+          "A": "integrity (integralność)",
+          "B": "information (informacja)",
+          "C": "isolation (izolacja)",
+          "D": "inspection (kontrola)"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },  
+
+
+  
   {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
+    "grupa": "PytaniaSzesnaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół STP zapobiega:",
+        "odpowiedzi": {
+          "A": "przeciążeniu sieci komunikatami RIP",
+          "B": "przekazywaniu zbędnych próśb o echo (ping)",
+          "C": "burzy rozgłoszeń",
+          "D": "żadna z powyższych odpowiedzi nie jest poprawna"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaką funkcję pełni protokół STP w sieciach LAN?",
+        "odpowiedzi": {
+          "A": "zapobiega pętli w topologii sieci",
+          "B": "routuje pakiety IP",
+          "C": "przesyła komunikaty ping",
+          "D": "zarządza adresacją IP"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Który protokół jest odpowiedzialny za eliminację pętli w sieci Ethernet?",
+        "odpowiedzi": {
+          "A": "RIP",
+          "B": "STP",
+          "C": "ICMP",
+          "D": "ARP"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół STP (Spanning Tree Protocol) służy do:",
+        "odpowiedzi": {
+          "A": "zarządzania adresacją IP",
+          "B": "zapobiegania pętlom w sieci",
+          "C": "wysyłania komunikatów echo",
+          "D": "przekazywania komunikatów routingu"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Co eliminuje protokół STP w sieciach lokalnych?",
+        "odpowiedzi": {
+          "A": "rozgłoszenia sieciowe",
+          "B": "pętle sieciowe",
+          "C": "zapętlenia tras IP",
+          "D": "duplikaty adresów MAC"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Do czego służy protokół STP (Spanning Tree Protocol)?",
+        "odpowiedzi": {
+          "A": "do zapobiegania pętlom w topologii sieci",
+          "B": "do routingu pakietów",
+          "C": "do zarządzania adresami MAC",
+          "D": "do monitorowania łączy WAN"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
+    "grupa": "PytaniaSiedemnaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Adresy typu link-local IPv6 rozpoczynają się od sekwencji:",
+        "odpowiedzi": {
+          "A": "FFFF::/10",
+          "B": "FE80::/10",
+          "C": "FE01::/16",
+          "D": "FF00::/64"
+        },
+        "poprawna": "B"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Co to jest HTML?",
-    "odpowiedzi": {
-      "A": "Język stylów",
-      "B": "Język programowania",
-      "C": "Język znaczników",
-      "D": "System operacyjny"
-    },
-    "poprawna": "C"
-  },
-  {
-    "typ": "zamknięte",
-    "pytanie": "Czym się różni let od var?",
-    "odpowiedzi": {
-      "A": "Nie różnią się",
-      "B": "let ma zasięg blokowy, var – funkcji",
-      "C": "var jest tylko w pętlach",
-      "D": "let działa tylko w przeglądarkach mobilnych"
-    },
-    "poprawna": "B"
+    "grupa": "PytaniaOsiemnaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Komputer, który poszukuje adresu sprzętowego maszyny o znanym adresie IP, korzysta z protokołu:",
+        "odpowiedzi": {
+          "A": "ARP",
+          "B": "RARP",
+          "C": "BOOTP",
+          "D": "DHCP"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Który protokół służy do odnajdywania adresu MAC urządzenia na podstawie znanego adresu IP?",
+        "odpowiedzi": {
+          "A": "RARP",
+          "B": "DHCP",
+          "C": "ARP",
+          "D": "BOOTP"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół wykorzystywany do mapowania adresu IP na adres sprzętowy to:",
+        "odpowiedzi": {
+          "A": "BOOTP",
+          "B": "ARP",
+          "C": "DHCP",
+          "D": "RARP"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaki protokół umożliwia przetłumaczenie adresu IP na adres MAC w sieci lokalnej?",
+        "odpowiedzi": {
+          "A": "DHCP",
+          "B": "RARP",
+          "C": "ARP",
+          "D": "BOOTP"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Funkcją którego protokołu jest odnajdywanie adresu sprzętowego na podstawie adresu IP?",
+        "odpowiedzi": {
+          "A": "ARP",
+          "B": "DHCP",
+          "C": "BOOTP",
+          "D": "RARP"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół ARP służy do:",
+        "odpowiedzi": {
+          "A": "mapowania adresów IP na adresy MAC",
+          "B": "przydzielania adresów IP",
+          "C": "mapowania adresów MAC na IP",
+          "D": "wyszukiwania serwera DHCP"
+        },
+        "poprawna": "A"
+      }
+    ]
   }, 
+  
+  
+
   {
-    "typ": "otwarte",
-    "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
-    "poprawna": ["<h1>", "<H1>", "h1", "H1"]
-  },
+    "grupa": "PytaniaDziewiętnaście",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Ruter otrzymał informację: docelowy_adres_IP = 19.168.4.5, maska 255.0.0.0. Ruter obliczy, że siecią, do której należy kierować ten datagram jest sieć:",
+        "odpowiedzi": {
+          "A": "19.0.0.0",
+          "B": "19.168.0.0",
+          "C": "19.168.4.0",
+          "D": "19.168.4.5"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Ruter otrzymał informację: docelowy_adres_IP = 172.16.12.7, maska 255.255.0.0. Ruter obliczy, że siecią, do której należy kierować ten datagram jest sieć:",
+        "odpowiedzi": {
+          "A": "172.16.12.0",
+          "B": "172.16.0.0",
+          "C": "172.0.0.0",
+          "D": "172.16.12.7"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Ruter otrzymał informację: docelowy_adres_IP = 10.10.5.9, maska 255.255.255.0. Ruter obliczy, że siecią, do której należy kierować ten datagram jest sieć:",
+        "odpowiedzi": {
+          "A": "10.10.5.0",
+          "B": "10.10.0.0",
+          "C": "10.0.0.0",
+          "D": "10.10.5.9"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Ruter otrzymał informację: docelowy_adres_IP = 192.168.100.50, maska 255.255.255.192. Ruter obliczy, że siecią, do której należy kierować ten datagram jest sieć:",
+        "odpowiedzi": {
+          "A": "192.168.100.0",
+          "B": "192.168.100.48",
+          "C": "192.168.100.64",
+          "D": "192.168.0.0"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Ruter otrzymał informację: docelowy_adres_IP = 172.31.200.15, maska 255.255.255.0. Ruter obliczy, że siecią, do której należy kierować ten datagram jest sieć:",
+        "odpowiedzi": {
+          "A": "172.31.200.0",
+          "B": "172.31.0.0",
+          "C": "172.0.0.0",
+          "D": "172.31.200.15"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Ruter otrzymał informację: docelowy_adres_IP = 192.0.2.123, maska 255.255.255.128. Ruter obliczy, że siecią, do której należy kierować ten datagram jest sieć:",
+        "odpowiedzi": {
+          "A": "192.0.2.0",
+          "B": "192.0.2.128",
+          "C": "192.0.0.0",
+          "D": "192.0.2.123"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "otwarte",
-    "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
-    "poprawna": ["<h1>", "<H1>", "h1", "H1"]
-  },
+    "grupa": "PytaniaDwadzieścia",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Wartość \"nieskończoności\" w metryce protokołu RIPv2 wynosi:",
+        "odpowiedzi": {
+          "A": "8",
+          "B": "16",
+          "C": "1024",
+          "D": "1472"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaką wartość metryki uznaje protokół RIPv2 za nieskończoność?",
+        "odpowiedzi": {
+          "A": "15",
+          "B": "16",
+          "C": "255",
+          "D": "8"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Metryka oznaczająca nieskończoność w RIPv2 to:",
+        "odpowiedzi": {
+          "A": "16",
+          "B": "8",
+          "C": "32",
+          "D": "0"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },     
+
+
+
   {
-    "typ": "otwarte",
-    "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
-    "poprawna": ["<h1>", "<H1>", "h1", "H1"]
-  },
+    "grupa": "PytaniaDwadzieściajeden",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół OSPF jest protokołem rutingu:",
+        "odpowiedzi": {
+          "A": "wewnętrznego, typu \"wektor odległości\"",
+          "B": "zewnętrznego, typu \"wektor odległości\"",
+          "C": "wewnętrznego, typu \"stan łącza\"",
+          "D": "zewnętrznego, typu \"stan łącza\""
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "OSPF to protokół rutingu:",
+        "odpowiedzi": {
+          "A": "zewnętrzny, wektor odległości",
+          "B": "wewnętrzny, stan łącza",
+          "C": "wewnętrzny, wektor odległości",
+          "D": "zewnętrzny, stan łącza"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jaki typ protokołu rutingu reprezentuje OSPF?",
+        "odpowiedzi": {
+          "A": "wektor odległości, zewnętrzny",
+          "B": "stan łącza, wewnętrzny",
+          "C": "wektor odległości, wewnętrzny",
+          "D": "stan łącza, zewnętrzny"
+        },
+        "poprawna": "B"
+      }
+    ]
+  },   
+  
+  
+
   {
-    "typ": "otwarte",
-    "pytanie": "Jak nazywa się znacznik nagłówka pierwszego poziomu w HTML?",
-    "poprawna": ["<h1>", "<H1>", "h1", "H1"]
-  },
+    "grupa": "PytaniaDwadzieściadwa",
+    "pytania": [
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które pola występują (tak), a które nie występują (nie) w nagłówku segmentu TCP:",
+        "podpytania": [
+          { "skrot": "okno", "poprawna": "tak" },
+          { "skrot": "numer potwierdzenia", "poprawna": "tak" },
+          { "skrot": "numer portu nadawcy", "poprawna": "tak" },
+          { "skrot": "flaga \"nie fragmentuj\"", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które pola występują (tak), a które nie występują (nie) w nagłówku segmentu TCP:",
+        "podpytania": [
+          { "skrot": "adres IP nadawcy", "poprawna": "nie" },
+          { "skrot": "numer portu odbiorcy", "poprawna": "tak" },
+          { "skrot": "flaga SYN", "poprawna": "tak" },
+          { "skrot": "adres MAC", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które pola występują (tak), a które nie występują (nie) w nagłówku segmentu TCP:",
+        "podpytania": [
+          { "skrot": "numer sekwencyjny", "poprawna": "tak" },
+          { "skrot": "numer portu źródłowego", "poprawna": "tak" },
+          { "skrot": "numer portu docelowego", "poprawna": "tak" },
+          { "skrot": "adres IP docelowy", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które pola występują (tak), a które nie występują (nie) w nagłówku segmentu TCP:",
+        "podpytania": [
+          { "skrot": "flaga ACK", "poprawna": "tak" },
+          { "skrot": "flaga FIN", "poprawna": "tak" },
+          { "skrot": "TTL", "poprawna": "nie" },
+          { "skrot": "numer potwierdzenia", "poprawna": "tak" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które pola występują (tak), a które nie występują (nie) w nagłówku segmentu TCP:",
+        "podpytania": [
+          { "skrot": "adres MAC nadawcy", "poprawna": "nie" },
+          { "skrot": "flaga RST", "poprawna": "tak" },
+          { "skrot": "numer portu docelowego", "poprawna": "tak" },
+          { "skrot": "adres IP nadawcy", "poprawna": "nie" }
+        ]
+      },
+      {
+        "typ": "tak-nie-wiele",
+        "pytanie": "Zaznacz, które pola występują (tak), a które nie występują (nie) w nagłówku segmentu TCP:",
+        "podpytania": [
+          { "skrot": "okno odbiorcze", "poprawna": "tak" },
+          { "skrot": "flaga PSH", "poprawna": "tak" },
+          { "skrot": "adres IP nadawcy", "poprawna": "nie" },
+          { "skrot": "adres MAC docelowy", "poprawna": "nie" }
+        ]
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "otwarte",
-    "pytanie": "Ile jest sieci na tym obrazku",
-    "poprawna": ["<h1>", "<H1>", "h1", "H1"]
-  },
+    "grupa": "PytaniaDwadzieściatrzy",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Przy nawiązywaniu połączenia klient-serwer w protokole TCP, po przesłaniu prośby o nawiązanie połączenia przez klienta, drugi segment - wysyłany przez serwer, ma ustawione:",
+        "odpowiedzi": {
+          "A": "flagę ACK",
+          "B": "flagę SYN",
+          "C": "flagi SYN i ACK",
+          "D": "flagi SYN i FIN"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jakie flagi są ustawione w drugim segmencie TCP podczas trzyetapowego uzgadniania połączenia (3-way handshake) wysyłanym przez serwer?",
+        "odpowiedzi": {
+          "A": "Tylko ACK",
+          "B": "Tylko SYN",
+          "C": "SYN i ACK",
+          "D": "SYN i FIN"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W protokole TCP, drugi segment potwierdzający inicjację połączenia przez klienta, wysyłany przez serwer, zawiera:",
+        "odpowiedzi": {
+          "A": "flagę ACK",
+          "B": "flagę SYN",
+          "C": "flagi SYN i ACK",
+          "D": "flagi FIN i ACK"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Które flagi nie są ustawione w drugim segmencie TCP wysyłanym przez serwer podczas nawiązywania połączenia?",
+        "odpowiedzi": {
+          "A": "SYN i ACK",
+          "B": "Tylko SYN",
+          "C": "FIN i SYN",
+          "D": "ACK"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Podczas ustalania połączenia TCP, segment wysyłany przez serwer w odpowiedzi na prośbę klienta ma ustawione flagi:",
+        "odpowiedzi": {
+          "A": "ACK i SYN",
+          "B": "SYN",
+          "C": "FIN",
+          "D": "ACK"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Drugi segment w procesie nawiązywania połączenia TCP ma ustawione flagi:",
+        "odpowiedzi": {
+          "A": "SYN",
+          "B": "ACK",
+          "C": "SYN i ACK",
+          "D": "FIN"
+        },
+        "poprawna": "C"
+      }
+    ]
+  },  
+
+
+
   {
-    "typ": "zamknięte",
-    "graf": {
-      "węzły": ["Sieć1", "Sieć2", "Sieć3", "Sieć4"],
-      "połączenia": [
-        ["Sieć1", "Sieć2"],
-        ["Sieć2", "Sieć3"],
-        ["Sieć2", "Sieć4"]
-      ],
-      "schemat": "Sieć1 ---- Sieć2\n               | \\\n               |  \\\n            Sieć3 Sieć4"
-    },
-    "pytanie": "Na podstawie grafu poniżej, ile sieci (węzłów) jest połączonych:",
-    "odpowiedzi": { "A": "3", "B": "4", "C": "2", "D": "5" },
-    "poprawna": "B"
-  }                              
+    "grupa": "PytaniaDwadzieściacztery",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół TCP jest protokołem:",
+        "odpowiedzi": {
+          "A": "sieciowym, zawodnym",
+          "B": "sieciowym, niezawodnym",
+          "C": "transportowym, połączeniowym",
+          "D": "transportowym, bezpołączeniowym"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół UDP jest protokołem:",
+        "odpowiedzi": {
+          "A": "transportowym, bezpołączeniowym",
+          "B": "transportowym, połączeniowym",
+          "C": "sieciowym, niezawodnym",
+          "D": "sieciowym, zawodnym"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół IP działa na warstwie:",
+        "odpowiedzi": {
+          "A": "sieciowej, bezpołączeniowy",
+          "B": "transportowej, połączeniowy",
+          "C": "aplikacji, bezpołączeniowy",
+          "D": "łącza danych, połączeniowy"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół ICMP jest protokołem:",
+        "odpowiedzi": {
+          "A": "warstwy sieciowej, bezpołączeniowym",
+          "B": "warstwy transportowej, połączeniowym",
+          "C": "warstwy aplikacji, połączeniowym",
+          "D": "warstwy łącza danych, bezpołączeniowym"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół HTTP jest protokołem działającym na warstwie:",
+        "odpowiedzi": {
+          "A": "aplikacji, bezpołączeniowym",
+          "B": "transportowej, połączeniowym",
+          "C": "sieciowej, połączeniowym",
+          "D": "łącza danych, bezpołączeniowym"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół FTP jest protokołem:",
+        "odpowiedzi": {
+          "A": "aplikacji, połączeniowym",
+          "B": "transportowym, bezpołączeniowym",
+          "C": "sieciowym, połączeniowym",
+          "D": "warstwy łącza danych, bezpołączeniowym"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },  
+
+
+
+  {
+    "grupa": "PytaniaDwadzieściapięć",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Czas dzierżawy adresu w DHCP wynosi T. Klient występuje o przedłużenie czasu dzierżawy po upływie czasu (tzw. czasu odnawiania), który wynosi:",
+        "odpowiedzi": {
+          "A": "0,25T",
+          "B": "0,5T",
+          "C": "0,875T",
+          "D": "0,95T"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Po jakim czasie od przydzielenia dzierżawy T klient DHCP próbuje ją odnowić?",
+        "odpowiedzi": {
+          "A": "0,5T",
+          "B": "0,25T",
+          "C": "0,75T",
+          "D": "0,875T"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Czas odnawiania dzierżawy DHCP (T1) to ile procent całkowitego czasu dzierżawy T?",
+        "odpowiedzi": {
+          "A": "25%",
+          "B": "50%",
+          "C": "87,5%",
+          "D": "95%"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W protokole DHCP klient żąda przedłużenia dzierżawy adresu po czasie równym:",
+        "odpowiedzi": {
+          "A": "0,5 * T",
+          "B": "0,25 * T",
+          "C": "0,75 * T",
+          "D": "0,9 * T"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Po upływie jakiego ułamka czasu dzierżawy T klient DHCP próbuje odnowić dzierżawę?",
+        "odpowiedzi": {
+          "A": "1/2 T",
+          "B": "1/4 T",
+          "C": "7/8 T",
+          "D": "3/4 T"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Wartość czasu odnawiania dzierżawy DHCP (T1) wynosi:",
+        "odpowiedzi": {
+          "A": "50% całkowitego czasu dzierżawy T",
+          "B": "25% czasu dzierżawy T",
+          "C": "87,5% czasu dzierżawy T",
+          "D": "95% czasu dzierżawy T"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },  
+
+
+
+  {
+    "grupa": "PytaniaDwadzieściasześć",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Logiczny segment sieci, w którym jakikolwiek komputer lub inne urządzenie połączone do sieci może bezpośrednio transmitować dane do jakiegokolwiek innego urządzenia w tej domenie, nazywa się:",
+        "odpowiedzi": {
+          "A": "domeną kolizyjną",
+          "B": "domeną DNS",
+          "C": "domeną rozgłoszeniową",
+          "D": "domeną serwerową"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Segment sieciowy, w którym może wystąpić kolizja danych pomiędzy urządzeniami, to:",
+        "odpowiedzi": {
+          "A": "domena kolizyjna",
+          "B": "domena rozgłoszeniowa",
+          "C": "domena serwerowa",
+          "D": "domena routingu"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Jak nazywa się segment sieci, w którym wszystkie podłączone urządzenia mogą bezpośrednio nadawać do siebie, potencjalnie powodując kolizje?",
+        "odpowiedzi": {
+          "A": "domena kolizyjna",
+          "B": "domena rozgłoszeniowa",
+          "C": "domena serwerowa",
+          "D": "domena DNS"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Domena sieciowa, w której może dojść do kolizji podczas transmisji, to:",
+        "odpowiedzi": {
+          "A": "domena kolizyjna",
+          "B": "domena DHCP",
+          "C": "domena routingu",
+          "D": "domena rozgłoszeniowa"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Segment sieci, gdzie urządzenia mogą bezpośrednio się komunikować i potencjalnie dochodzić do kolizji, to:",
+        "odpowiedzi": {
+          "A": "domena kolizyjna",
+          "B": "domena VLAN",
+          "C": "domena routingu",
+          "D": "domena NAT"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W sieci, segment gdzie urządzenia dzielą medium transmisyjne i mogą powodować kolizje, określa się mianem:",
+        "odpowiedzi": {
+          "A": "domeny kolizyjnej",
+          "B": "domeny rozgłoszeniowej",
+          "C": "domeny serwerowej",
+          "D": "domeny DNS"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },  
+
+
+  
+  {
+    "grupa": "PytaniaDwadzieściasiedem",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół UDP",
+        "odpowiedzi": {
+          "A": "sieciowym, zawodnym",
+          "B": "sieciowym, niezawodnym",
+          "C": "transportowym, zawodnym",
+          "D": "transportowym, niezawodnym"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "UDP jest protokołem warstwy:",
+        "odpowiedzi": {
+          "A": "sieciowej, niezawodnym",
+          "B": "transportowej, bezpołączeniowym i zawodnym",
+          "C": "aplikacji, połączeniowym",
+          "D": "transportowej, połączeniowym"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Które zdanie najlepiej opisuje protokół UDP?",
+        "odpowiedzi": {
+          "A": "Jest to protokół transportowy, połączeniowy i niezawodny",
+          "B": "Jest to protokół sieciowy, bezpołączeniowy i zawodny",
+          "C": "Jest to protokół transportowy, bezpołączeniowy i zawodny",
+          "D": "Jest to protokół aplikacyjny, połączeniowy i niezawodny"
+        },
+        "poprawna": "C"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół UDP działa na warstwie:",
+        "odpowiedzi": {
+          "A": "transportowej, bezpołączeniowej",
+          "B": "sieciowej, połączeniowej",
+          "C": "aplikacji, połączeniowej",
+          "D": "łącza danych, bezpołączeniowej"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "UDP to protokół:",
+        "odpowiedzi": {
+          "A": "transportowy, niezawodny",
+          "B": "transportowy, bezpołączeniowy i zawodny",
+          "C": "sieciowy, połączeniowy",
+          "D": "aplikacyjny, niezawodny"
+        },
+        "poprawna": "B"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Protokół UDP charakteryzuje się:",
+        "odpowiedzi": {
+          "A": "brakiem połączenia i zawodnością",
+          "B": "brakiem połączenia i niezawodnością",
+          "C": "połączeniowością i zawodnością",
+          "D": "połączeniowością i niezawodnością"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },     
+
+
+
+  {
+    "grupa": "PytaniaDwadzieściaosiem",
+    "pytania": [
+      {
+        "typ": "zamknięte",
+        "pytanie": "W sieciach bezprzewodowych standardów z rodziny 802.11:\nramka RTS jest:",
+        "odpowiedzi": {
+          "A": "krótsza niż ramka CTS",
+          "B": "dłuższa niż ramka CTS",
+          "C": "tej samej długości co ramka CTS",
+          "D": "jej długość zmienia się losowo"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W standardzie 802.11 która z ramek ma mniejszy rozmiar?",
+        "odpowiedzi": {
+          "A": "RTS jest krótsza niż CTS",
+          "B": "CTS jest krótsza niż RTS",
+          "C": "RTS i CTS mają tę samą długość",
+          "D": "Długości ramek są zmienne"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Porównaj długości ramek RTS i CTS w sieciach 802.11:",
+        "odpowiedzi": {
+          "A": "RTS jest krótsza niż CTS",
+          "B": "RTS jest dłuższa niż CTS",
+          "C": "Obie mają identyczną długość",
+          "D": "Długość ramek jest losowa"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W sieciach Wi-Fi (802.11) długość ramki RTS w porównaniu do CTS jest:",
+        "odpowiedzi": {
+          "A": "mniejsza",
+          "B": "większa",
+          "C": "równa",
+          "D": "zmienna"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "Która ramka w standardzie 802.11 ma krótszy rozmiar?",
+        "odpowiedzi": {
+          "A": "RTS",
+          "B": "CTS",
+          "C": "Obie mają taki sam rozmiar",
+          "D": "Zależy od warunków sieci"
+        },
+        "poprawna": "A"
+      },
+      {
+        "typ": "zamknięte",
+        "pytanie": "W standardach 802.11 ramka RTS jest:",
+        "odpowiedzi": {
+          "A": "zawsze krótsza od CTS",
+          "B": "zawsze dłuższa od CTS",
+          "C": "takiej samej długości jak CTS",
+          "D": "zmieniającej długość losowo"
+        },
+        "poprawna": "A"
+      }
+    ]
+  },  
+
+
+
+  {
+    "grupa": "PytaniaDwadzieściadziewięć",
+    "pytania": [
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Dana jest maska podsieci: 255.255.255.192 i adres IP 193.168.5.144 interfejsu hosta PC1.",
+        "podpytania": [
+          { "litera": "a", "skrot": "Adres bazowy podsieci", "poprawna": ["193.168.5.128"] },
+          { "litera": "b", "skrot": "Liczba możliwych interfejsów", "poprawna": ["62"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Dana jest maska podsieci: 255.255.255.240 i adres IP 192.168.1.147 interfejsu hosta PC1.",
+        "podpytania": [
+          { "litera": "a", "skrot": "Adres bazowy podsieci", "poprawna": ["192.168.1.144"] },
+          { "litera": "b", "skrot": "Liczba możliwych interfejsów", "poprawna": ["14"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Dla adresu IP 10.0.0.33 i maski 255.255.255.248, określ:",
+        "podpytania": [
+          { "litera": "a", "skrot": "Adres sieci", "poprawna": ["10.0.0.32"] },
+          { "litera": "b", "skrot": "Maksymalna liczba hostów", "poprawna": ["6"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Interfejs PC1 posiada IP 172.16.8.66 oraz maskę 255.255.255.192.",
+        "podpytania": [
+          { "litera": "a", "skrot": "Adres podsieci", "poprawna": ["172.16.8.64"] },
+          { "litera": "b", "skrot": "Liczba możliwych hostów", "poprawna": ["62"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Host PC ma adres IP 192.168.100.222 oraz maskę 255.255.255.224.",
+        "podpytania": [
+          { "litera": "a", "skrot": "Adres bazowy podsieci", "poprawna": ["192.168.100.224"] },
+          { "litera": "b", "skrot": "Ilość hostów", "poprawna": ["30"] }
+        ]
+      },
+      {
+        "typ": "otwarte-wiele",
+        "pytanie": "Dany jest adres IP 172.31.255.19 i maska 255.255.255.248.",
+        "podpytania": [
+          { "litera": "a", "skrot": "Numer podsieci", "poprawna": ["172.31.255.16"] },
+          { "litera": "b", "skrot": "Liczba możliwych interfejsów w podsieci", "poprawna": ["6"] }
+        ]
+      }
+    ]
+  }    
 ]
