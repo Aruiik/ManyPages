@@ -18,10 +18,17 @@ function generateQuestions() {
 
   shuffledQuestions = wszystkiePytania.map(grupa => {
     const idx = Math.floor(Math.random() * grupa.pytania.length);
-    const pytanie = grupa.pytania[idx];
-    pytanie._grupa = grupa.grupa; // dodaj tymczasowe pole
+    const pytanie = { ...grupa.pytania[idx], _grupa: grupa.grupa };
     return pytanie;
   });
+
+  for (let i = 0; i < 2; i++) {
+    const grupaIdx = Math.floor(Math.random() * wszystkiePytania.length);
+    const grupa = wszystkiePytania[grupaIdx];
+    const pytanieIdx = Math.floor(Math.random() * grupa.pytania.length);
+    const pytanie = { ...grupa.pytania[pytanieIdx], _grupa: grupa.grupa };
+    shuffledQuestions.push(pytanie);
+  }
 
   const list = document.getElementById("questionList");
   list.innerHTML = "";
@@ -203,7 +210,6 @@ function checkAnswers() {
           input.style.backgroundColor = "#44c763";
         } else {
           input.style.backgroundColor = "#e63e4d";
-          // Dodaj poprawną odpowiedź pod polem, jeśli jeszcze nie dodana
           if (!input.parentElement.querySelector('.poprawna-odpowiedz')) {
             const div = document.createElement('div');
             div.className = 'poprawna-odpowiedz';
