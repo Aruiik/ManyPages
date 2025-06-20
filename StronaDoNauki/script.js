@@ -18,7 +18,9 @@ function generateQuestions() {
 
   shuffledQuestions = wszystkiePytania.map(grupa => {
     const idx = Math.floor(Math.random() * grupa.pytania.length);
-    return grupa.pytania[idx];
+    const pytanie = grupa.pytania[idx];
+    pytanie._grupa = grupa.grupa; // dodaj tymczasowe pole
+    return pytanie;
   });
 
   const list = document.getElementById("questionList");
@@ -34,7 +36,7 @@ function generateQuestions() {
       html += `<div class="graf-schemat"><pre>${item.graf.schemat}</pre></div>`;
     }
 
-    if (item.graf) {
+    if (item.graf && item._grupa !== "PytaniaDwa") {
       html += `<div class="graf-wezly"><b>Sieci:</b> ${item.graf.węzły.join(", ")}</div>`;
       html += `<div class="graf-polaczenia"><b>Połączenia:</b> ${item.graf.połączenia.map(p => p.join("–")).join(", ")}</div>`;
     }
@@ -195,14 +197,29 @@ function checkAnswers() {
       current.podpytania.forEach((pod, i) => {
         const input = item.querySelector(`input[name="q${index}_sub${i}"]`);
         const user = input.value.trim().toLowerCase();
-        if (pod.poprawna.some(ans => user.includes(ans))) poprawnych++;
+        const isOk = pod.poprawna.some(ans => user === ans.toLowerCase());
+        if (isOk) {
+          poprawnych++;
+          input.style.backgroundColor = "#44c763";
+        } else {
+          input.style.backgroundColor = "#e63e4d";
+          // Dodaj poprawną odpowiedź pod polem, jeśli jeszcze nie dodana
+          if (!input.parentElement.querySelector('.poprawna-odpowiedz')) {
+            const div = document.createElement('div');
+            div.className = 'poprawna-odpowiedz';
+            div.style.color = '#44c763';
+            div.style.marginTop = '4px';
+            div.innerHTML = `Poprawna: <b>${pod.poprawna[0]}</b>`;
+            input.parentElement.appendChild(div);
+          }
+        }
       });
       const czesciowy = poprawnych / current.podpytania.length;
       score += czesciowy;
       if (czesciowy === 1) {
         item.style.backgroundColor = "#44c763";
       } else if (czesciowy > 0) {
-        item.style.backgroundColor = "#f2c513";
+        item.style.backgroundColor = "#ffe066";
       } else {
         item.style.backgroundColor = "#e63e4d";
       }

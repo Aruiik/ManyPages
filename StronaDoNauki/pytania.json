@@ -240,7 +240,7 @@
           "pytanie": "Podaj nazwy (znaczenie) skrótów flag (control bits) w nagłówku segmentu TCP (nazwy polskie lub angielskie):",
           "podpytania": [
             { "litera": "a", "skrot": "SYN", "poprawna": ["synchronize", "synchronizacja", "synchronizuj", "synchronization"] },
-            { "litera": "b", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "acknowledge"] },
+            { "litera": "b", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "acknowledge", "Acknowledge"] },
             { "litera": "c", "skrot": "URG", "poprawna": ["urgent", "pilny", "priorytetowy"] },
             { "litera": "d", "skrot": "PSH", "poprawna": ["push", "wypchnij", "przepchnij"] }
           ]
@@ -251,7 +251,7 @@
           "podpytania": [
             { "litera": "a", "skrot": "RST", "poprawna": ["reset", "resetowanie", "restart"] },
             { "litera": "b", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo", "ECN Echo"] },
-            { "litera": "c", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "acknowledge"] },
+            { "litera": "c", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "acknowledge", "Acknowledge"] },
             { "litera": "d", "skrot": "URG", "poprawna": ["urgent", "pilny", "priorytetowy"] }
           ]
         },
@@ -279,7 +279,7 @@
           "typ": "otwarte-wiele",
           "pytanie": "Wyjaśnij znaczenie flag TCP podanych niżej (można podać po polsku lub angielsku):",
           "podpytania": [
-            { "litera": "a", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack"] },
+            { "litera": "a", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "Acknowledge"] },
             { "litera": "b", "skrot": "FIN", "poprawna": ["finish", "zakończenie", "koniec", "final"] },
             { "litera": "c", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo", "ECN Echo"] },
             { "litera": "d", "skrot": "RST", "poprawna": ["reset", "restart", "ponowne połączenie"] }
