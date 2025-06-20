@@ -78,11 +78,11 @@
             "1.1.1.1"
           ],
           "poprawne": [
-            [2],    
+            [1],    
             [5],    
             [4],    
             [3],    
-            [2]     
+            [1]     
           ]
         }
       },
@@ -945,7 +945,7 @@
           "C": "5 fragmentów",
           "D": "6 fragmentów"
         },
-        "poprawna": "C"
+        "poprawna": "B"
       },
       {
         "typ": "zamknięte",
