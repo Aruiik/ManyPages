@@ -57,7 +57,7 @@
             "256.0.0.1"
           ],
           "poprawne": [
-            [2],    
+            [1],    
             [5],    
             [4],    
             [3],    
@@ -934,7 +934,7 @@
           "C": "4 fragmenty",
           "D": "5 fragmentów"
         },
-        "poprawna": "C"
+        "poprawna": "B"
       },
       {
         "typ": "zamknięte",
