@@ -250,7 +250,7 @@
           "pytanie": "Podaj rozwinięcia poniższych skrótów flag w TCP:",
           "podpytania": [
             { "litera": "a", "skrot": "RST", "poprawna": ["reset", "resetowanie", "restart"] },
-            { "litera": "b", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo", "ECN Echo"] },
+            { "litera": "b", "skrot": "ECE", "poprawna": ["explicit congestion notification echo", "jawne przeciążenie", "ECN echo", "ECN Echo"] },
             { "litera": "c", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "acknowledge", "Acknowledge"] },
             { "litera": "d", "skrot": "URG", "poprawna": ["urgent", "pilny", "priorytetowy"] }
           ]
@@ -272,7 +272,7 @@
             { "litera": "a", "skrot": "FIN", "poprawna": ["finish", "zakończenie", "koniec", "final"] },
             { "litera": "b", "skrot": "RST", "poprawna": ["reset", "restart", "zerowanie", "ponowne połączenie"] },
             { "litera": "c", "skrot": "CWR", "poprawna": ["congestion window reduced", "zmniejszenie okna przeciążenia"] },
-            { "litera": "d", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo", "ECN Echo"] }
+            { "litera": "d", "skrot": "ECE", "poprawna": ["explicit congestion notification echo", "jawne przeciążenie", "ECN echo", "ECN Echo"] }
           ]
         },
         {
@@ -281,7 +281,7 @@
           "podpytania": [
             { "litera": "a", "skrot": "ACK", "poprawna": ["acknowledgment", "potwierdzenie", "ack", "Acknowledge"] },
             { "litera": "b", "skrot": "FIN", "poprawna": ["finish", "zakończenie", "koniec", "final"] },
-            { "litera": "c", "skrot": "ECE", "poprawna": ["explicit congestion notification", "jawne przeciążenie", "ECN echo", "ECN Echo"] },
+            { "litera": "c", "skrot": "ECE", "poprawna": ["explicit congestion notification echo", "jawne przeciążenie", "ECN echo", "ECN Echo"] },
             { "litera": "d", "skrot": "RST", "poprawna": ["reset", "restart", "ponowne połączenie"] }
           ]
         },
