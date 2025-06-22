@@ -393,7 +393,7 @@
       },
       {
         "typ": "zamknięte",
-        "pytanie": "Która warstwa w modelu TCP/IP odpowiada za niezawodne przesyłanie danych między procesami (trzecia warstwa)?",
+        "pytanie": "Która warstwa w modelu TCP/IP odpowiada za niezawodne przesyłanie danych między procesami (druga warstwa)?",
         "odpowiedzi": {
           "A": "Warstwa sieci",
           "B": "Warstwa transportowa",
@@ -537,7 +537,7 @@
           "C": "1518 oktetów",
           "D": "żadna z powyższych odpowiedzi nie jest prawidłowa"
         },
-        "poprawna": "C"
+        "poprawna": "B"
       },
       {
         "typ": "zamknięte",
