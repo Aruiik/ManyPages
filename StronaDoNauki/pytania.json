@@ -611,7 +611,7 @@
           "C": "prywatny adres interfejsu, klasy B",
           "D": "publiczny adres interfejsu, klasy B"
         },
-        "poprawna": "C"
+        "poprawna": "D"
       },
       {
         "typ": "zamknięte",
@@ -923,7 +923,7 @@
           "C": "4 fragmenty",
           "D": "5 fragmentów"
         },
-        "poprawna": "C"
+        "poprawna": "B"
       },
       {
         "typ": "zamknięte",
@@ -1725,7 +1725,7 @@
           "C": "domeną rozgłoszeniową",
           "D": "domeną serwerową"
         },
-        "poprawna": "A"
+        "poprawna": "C"
       },
       {
         "typ": "zamknięte",
